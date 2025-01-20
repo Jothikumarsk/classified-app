@@ -8,7 +8,7 @@ const PropertyDetails = () => {
 
     useEffect(() => {
         const fetchProperty = async () => {
-            const response = await axios.get(`http://localhost:5000/api/properties/${id}`);
+            const response = await axios.get(`https://classified-app.onrender.com/api/properties/${id}`);
             setProperty(response.data);
         };
         fetchProperty();
