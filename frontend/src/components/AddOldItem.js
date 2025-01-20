@@ -26,7 +26,7 @@ const AddOldItem = () => {
         try {
             const token = localStorage.getItem("token"); // Assumes token is stored in localStorage
              await axios.post(
-                "http://localhost:5000/api/old-items",
+                "https://classified-app.onrender.com/api/old-items",
                 formData,
                 {
                     headers: {
