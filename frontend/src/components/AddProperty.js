@@ -34,7 +34,7 @@ const AddProperty = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/properties', formData);
+            await axios.post('https://classified-app.onrender.com/api/properties', formData);
             alert('Property added successfully');
         } catch (err) {
             console.error(err);
