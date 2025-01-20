@@ -1,5 +1,5 @@
 const express = require('express');
-const Property = require('../models/Property');
+const Property = require('../models/property');
 const { authenticate, authorizeAdmin } = require('../middleware/auth');
 
 const router = express.Router();
